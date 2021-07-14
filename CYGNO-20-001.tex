@@ -55,6 +55,7 @@
 \usepackage{lineno,hyperref}
 \usepackage{diagbox}
 \usepackage{eurosym}
+\usepackage{xspace}
 \modulolinenumbers[5]
 
 
@@ -940,12 +941,12 @@ A \GEANT~based Montecarlo simulation reproducing a 1 m$^3$ detector as from the 
 
 The effect of the diffused external environmental $\gamma$ and neutron flux using as a reference the spectra measured at LNGS was studied. Different configurations of external passive shielding with layers of Copper, Lead and Water were studied with the goal of less than 10$^4$ gamma/year interacting in the target gas between 1 keV and 20 keV. The choice of this benchmark is backed up by indication from measurements\cite{Riffard:2016mgw,Phan:2015pda} and simulation within the CYGNUS collaboration\cite{Vahsen:2020pzb} that a TPC with 3D readout can reach a 10$^5$ gamma/year rejection factor at O(keV). 
 
-While the use of Pb can significantly reduce the overall setup dimensions, the simulation showed that this configuration would require archaeological Lead in order not to induce additional background from the shielding, therefore largely raising the cost of this layer. A cost-benefit optimisation of the shielding layer materials and thicknesses was hence developed, identifying 2 m of Water + 5 cm of Copper as the optimal configuration. This shielding provides an attenuation of about 10$^{−7}$ for external gammas and 5 $\times$ 10$^{−5}$ for external neutrons, reducing the number of expected electron recoils in the active volume below 10$^3$ cpy (with O(1) cpy nuclear recoils) in the range 1-20 keV. 
+While the use of Pb can significantly reduce the overall setup dimensions, the simulation showed that this configuration would require archaeological Lead in order not to induce additional background from the shielding, therefore largely raising the cost of this layer. A cost-benefit optimisation of the shielding layer materials and thicknesses was hence developed, identifying 2 m of Water + 5 cm of Copper as the optimal configuration. This shielding provides an attenuation of about 10$^{-7}$ for external gammas and 5 $\times$ 10$^{-5}$ for external neutrons, reducing the number of expected electron recoils in the active volume below 10$^3$ cpy (with O(1) cpy nuclear recoils) in the range 1-20 keV. 
 
 \begin{table}[t]
     \centering
     %\scalebox{0.9}{
-    \resizebox{\columnwidth}{!}{%
+    \resizebox{\columnwidth}{!}{
    % \begin{tabular}{c|c|c|c|c|c|c|c|c}
     \begin{tabular}{c|c|c|c|c|c|c}
     Component & $^{238}$U ($^{234m}$Pa)  & $^{238}$U ($^{226}$Ra) & $^{235}$U  & $^{232}$Th ($^{228}$Ra) & $^{232}$Th ($^{228}$Th) &  $^{40}$K  \\ % & $^{137}$Cs [Bq/kg] & $^{60}$Co  [Bq/kg]   \\
@@ -953,13 +954,13 @@ While the use of Pb can significantly reduce the overall setup dimensions, the s
 \hline
 Camera body [Bq/pc] & 7 & 1.8 & 0.4 & 2.1 & 2.1 & 1.9 \\ % & 0.04& 0.005 \\
 Camera lens [Bq/pc] & 0.9 & 0.41 & 0.031 & 0.08 & 0.08 & 11 \\ % & 0.046 & 2.44\\
-GEM foil [Bq/m^2] & < 0.104 & 0.004 & < 0.002 & < 0.004 & < 0.002 & < 0.045 \\ % & 0.008 & 0.007 \\
+GEM foil [Bq/$m^2$] & < 0.104 & 0.004 & < 0.002 & < 0.004 & < 0.002 & < 0.045 \\ % & 0.008 & 0.007 \\
 Acrylic [Bq/kg] &  &  0.003 &  & 0.005 & 0.004 & 0.035 \\ % & & \\
  \hline
  \hline
     \end{tabular}
     }
-    \caption{Measured activity of the internal detector components expected to produce the largest backgrounds in the active volume. The isotopes in parentheses indicate the activity from that particular part of the decay chain. Upper limits are given at 90$\%$ confidence level.}
+    \caption{Measured activity of the internal detector components expected to produce the largest backgrounds in the active volume. The isotopes in parentheses indicate the activity from that particular part of the decay chain. Upper limits are given at 90\% confidence level.}
     \label{tab:camera_radio}
 \end{table}
 
