@@ -83,8 +83,10 @@
 
 % units
 \newcommand{\unit}[1]{\ensuremath{\textrm{\,#1}}\xspace}
-\newcommand{\keV}{\ensuremath{\,\textrm{ke\hspace{-.08em}V}}\xspace}
-\newcommand{\eV}{\ensuremath{\,\textrm{e\hspace{-.08em}V}}\xspace}
+%\newcommand{\keV}{\ensuremath{\,\textrm{ke\hspace{-.08em}V}}\xspace}
+%\newcommand{\eV}{\ensuremath{\,\textrm{e\hspace{-.08em}V}}\xspace}
+\newcommand{\keV}{\ensuremath{\,\textrm{keV}}\xspace}
+\newcommand{\eV}{\ensuremath{\,\textrm{eV}}\xspace}
 
 % GEM stuff
 \newcommand{\Itot}{I$_{\mathrm{Tot}}$\xspace}
@@ -430,7 +432,7 @@ An estimate for the average energy loss per single ionization of 42~eV was also 
  
 The effective ranges of electron and He-nuclei recoils were simulated
 respectively with \GEANT~\cite{bib:geant} and
- \SRIM~software\footnote{Visit the {\it http://www.srim.org/} site for more information}. The 2D projected ranges on the readout plane (i.e. the CMOS camera image) as a function of particle kinetic energy are shown in Fig.~\ref{fig:range}:
+ \SRIM~software\footnote{Visit the {\it http://www.srim.org/} site for more information}. The average 3D ranges (i.e. the distance between production and absorption point) as a function of particle kinetic energy are shown in Fig.~\ref{fig:range}:
  \begin{itemize}
      \item He-nuclei recoils have a sub-millimetre range up to energies
        of 100\keV and are thus expected to produce bright spots with
@@ -446,7 +448,7 @@ respectively with \GEANT~\cite{bib:geant} and
 \begin{figure}[t!]
   \begin{center}
     \includegraphics[width=0.49\linewidth]{range_ER_NR.pdf}
-    \caption{Average 2D projected ranges on the readout plane for electron and He-nuclei recoils as a faction of their kinetic energy.}
+    \caption{Average 3D distance between production and absorption point for electron and He-nuclei recoils as a function of their kinetic energy.}
       \label{fig:range}
       \end{center}
 \end{figure}
@@ -1380,7 +1382,7 @@ where $p(\mu_s\vert\boldsymbol{D},H_1)$ is the posterior probability marginalise
 
 \section*{References}
 
-\bibliography{cygno}
+\bibliography{CYGNO-20-001}
 
 
 \end{document}
